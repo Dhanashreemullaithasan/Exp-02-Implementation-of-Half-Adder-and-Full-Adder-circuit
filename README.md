@@ -42,17 +42,28 @@ Developed by: DHANASHREE M
 RegisterNumber:  212221230018
 # HALF ADDER:
 module EX2(A,B,sum,carry); 
+
 input A,B; 
+
 output sum,carry; 
+
 xor(sum,A,B); 
+
 and(carry,A,B); 
+
 endmodule
+
 # FULL ADDER:
-module ex02(a,b,c,Sum,Carry); 
+module ex02(a,b,c,Sum,Carry);
+
 input a,b,c; 
+
 output Sum,Carry; 
-assign Sum = ((a^b)^c); 
-assign Carry = ((a&b) | (b&c) | (c&a)); 
+
+assign Sum = ((a^b)^c);
+
+assign Carry = ((a&b) | (b&c) | (c&a));
+
 endmodule
 */
 ### Output:
